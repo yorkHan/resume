@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Resume</title>
     <link rel="stylesheet" href="CSS/main.css">
     <link rel="stylesheet" href="CSS/loading.css">
     <script src="//at.alicdn.com/t/font_621912_9r2kl0u76xzb0529.js"></script>
@@ -13,20 +13,34 @@
     <div id="siteWelcome" class="site-welcome active">
         <div class="loading"></div>
     </div>
-    <div class="topNavBar clearfix">
+    <div id="topNavBar" class="topNavBar">
         <div class="topNavBar-inner clearfix">
             <a class="logo" href="#" alt="logo" style="float:left;">
                 <span class="rs">York</span><span class="card">H</span>
             </a>
-            <nav>
+            <nav class="meau">
                 <ul class="clearfix" style="float: right;">
-                    <li><a href="#">关于</a></li>
-                    <li><a href="#">技能</a></li>
-                    <li><a href="#">作品</a></li>
-                    <li><a href="#">博客</a></li>
-                    <li><a href="#">日历</a></li>
-                    <li><a href="#">联系方式</a></li>
-                    <li><a href="#">其他</a></li>
+                    <li class="subMean"><a href="#about">关于</a></li>
+                    <li  class="subMean">
+                        <a href="#ability">技能</a>
+                        <ul>
+                            <li>JavaScript</li>
+                            <li>jQuery</li>
+                            <li>Vue</li>
+                        </ul>
+                    </li>
+                    <li class="subMean">
+                        <a href="#works">作品</a>
+                        <ul>
+                            <li>Nav</li>
+                            <li>Canvas</li>
+                            <li>Resume</li>
+                        </ul>
+                    </li>
+                    <li class="subMean"><a href="#blog">博客</a></li>
+                    <li class="subMean"><a href="#calendars">日历</a></li>
+                    <li class="subMean"><a href="#connect">联系方式</a></li>
+                    <li class="subMean"><a href="#other">其他</a></li>
                 </ul>
             </nav>
         </div>
@@ -35,7 +49,7 @@
         <div class="mask"></div>
     </div>
     <main>
-        <div class="usercard">
+        <div id="about" class="usercard">
             <div class="textAndPicture clearfix">
                 <div class="pic">
                     <img src="./images/avatar.png" style="width:299px;height:347px" alt="头像">
@@ -106,7 +120,7 @@
             你好！我是韩禹，我是个Web前端开发工程师。
         </p>
     </main>
-    <section class="skills">
+    <section id="ability" class="skills">
         <h2>技能</h2>
         <ol class="clearfix">
             <li>
@@ -153,7 +167,7 @@
             </li>
         </ol>
     </section>
-    <section  class="portfolio">
+    <section id="works"  class="portfolio">
         <h2>作品集</h2>
         <nav>
             <ol class="clearfix">
@@ -177,7 +191,8 @@
             </div>
         </div>
     </section>
-    <script src="./script.js"></script>
+    <script src="scripts/Tween.js"></script>
+    <script src="scripts/script.js"></script>
     <script>
         setTimeout(function(){
             siteWelcome.classList.remove('active')
