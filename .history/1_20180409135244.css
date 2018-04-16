@@ -1,0 +1,25 @@
+body{
+    background-color: black;
+}
+.clearfix::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.topNavBar>nav>ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.topNavBar>nav>ul>li{
+    float: left;
+
+}
+.topNavBar>nav>ul>li>a{
+    font-size: 14px;
+    f
+    color:#c1c3c7;
+    text-decoration: none;
+    margin-left: 17px;
+    margin-right: 17px;
+}

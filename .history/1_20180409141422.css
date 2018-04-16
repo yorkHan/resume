@@ -1,0 +1,30 @@
+body{
+    background-color: black;
+}
+.clearfix::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.topNavBar>nav>ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.topNavBar>nav>ul>li{
+    float: left;
+
+}
+.topNavBar>nav>ul>li>a{
+    font-size: 14px;
+    font-weight: bold;
+    color:#c1c3c7;
+    text-decoration: none;
+    margin-left: 17px;
+    margin-right: 17px;
+    pad
+    border-bottom:3px solid transparent;
+}
+.topNavBar>nav>ul>li>a:hover{
+    border-bottom:3px solid #E8676B;
+}

@@ -1,0 +1,11 @@
+.clearfix::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.topNavBar>nav>ul{
+    float: left;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}

@@ -1,0 +1,17 @@
+body{
+    ba
+}
+.clearfix::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.topNavBar>nav>ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.topNavBar>nav>ul>li{
+    float: left;
+    font-size: 12px;
+}
