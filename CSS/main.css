@@ -89,6 +89,7 @@ a{
     border-top:3px solid transparent;
     border-bottom:3px solid transparent;
 }
+.topNavBar .subMean.highlight::after,
 .topNavBar .subMean.active::after{
     display: block;
     content:'';
@@ -98,6 +99,13 @@ a{
     height: 3px;
     background-color:  #E8676B;
     animation:moveToRight 0.5s;
+}
+[data-x].offset{
+    transform: translateY(100px);
+}
+[data-x]{
+    transform: translateY(0);
+    transition: all 0.5s;
 }
 .topNavBar .subMean::after{
     display: none;
@@ -271,11 +279,17 @@ section.skills .progressBar{
     background-color: rgba(128, 128, 128, 0.192);
     border-radius: 3px;
     margin: 4px 0 40px 0;
+    overflow: hidden;
 }
 section.skills .progressBar .progress{
     height: 100%;
     width: 50%;
     background-color: #E8676B;
+    transform: translateX(0);
+    transition: all 1s;
+}
+section.skills.offset .progress{
+    transform: translateX(-100%);
 }
 section.portfolio{
     max-width: 940px;

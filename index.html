@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Resume</title>
-    <link rel="stylesheet" href="CSS/main.css">
-    <link rel="stylesheet" href="CSS/loading.css">
+    <link rel="stylesheet" href="./CSS/main.css">
+    <link rel="stylesheet" href="./CSS/loading.css">
     <script src="//at.alicdn.com/t/font_621912_9r2kl0u76xzb0529.js"></script>
 </head>
 <body>
@@ -49,7 +49,7 @@
         <div class="mask"></div>
     </div>
     <main>
-        <div id="about" class="usercard">
+        <div data-x id="about" class="usercard">
             <div class="textAndPicture clearfix">
                 <div class="pic">
                     <img src="./images/avatar.png" style="width:299px;height:347px" alt="头像">
@@ -120,7 +120,7 @@
             你好！我是韩禹，我是个Web前端开发工程师。
         </p>
     </main>
-    <section id="ability" class="skills">
+    <section data-x id="ability" class="skills">
         <h2>技能</h2>
         <ol class="clearfix">
             <li>
@@ -167,7 +167,7 @@
             </li>
         </ol>
     </section>
-    <section id="works"  class="portfolio">
+    <section data-x id="works"  class="portfolio">
         <h2>作品集</h2>
         <nav>
             <ol class="clearfix">
@@ -196,7 +196,7 @@
     <script>
         setTimeout(function(){
             siteWelcome.classList.remove('active')
-        },2000)
+        },1000)
     </script>
 </body>
 </html>

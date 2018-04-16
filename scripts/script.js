@@ -7,13 +7,42 @@ portfolioFramework.onclick=function(){
 portfolioValina.onclick=function(){
     bar.className=("bar state-3");
 }
+
+var aCard=document.querySelectorAll('[data-x]')
+for(let i=0;i<aCard.length;i++){
+    aCard[i].classList.add('offset')
+}
+setTimeout(function(){
+    animation()
+},800)
 window.onscroll=function(){
     if(window.scrollY>0){
         topNavBar.classList.add('active')
     }else{
         topNavBar.classList.remove('active')
     }
+    animation()
 }
+
+function animation(){
+    var aCard=document.querySelectorAll('[data-x]')
+    var mindex=0
+    for(let i=1;i<aCard.length;i++){
+        if(Math.abs(aCard[i].offsetTop-window.scrollY)<Math.abs(aCard[mindex].offsetTop-window.scrollY)){
+            mindex=i
+        }
+    }
+    aCard[mindex].classList.remove('offset')
+    var id=aCard[mindex].id
+    var site=document.querySelector('a[href="#'+id+'"]')
+    var li=site.parentNode
+    var bothers=li.parentNode.children
+    for(var i=0;i<bothers.length;i++){
+        bothers[i].classList.remove('highlight')
+    }
+    li.classList.add('highlight')
+}
+
 var liTags=document.getElementsByClassName("subMean");
 for(var i=0;i<liTags.length;i++){
     liTags[i].onmouseenter=function(x){
