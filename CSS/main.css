@@ -297,50 +297,24 @@ section.portfolio{
     margin-right: auto;
     text-align: center;
 }
-section.portfolio ol>li{
-    float: left;
-    margin-right: 50px;
-    cursor: pointer;
-}
-section.portfolio ol>li:last-child{
-    margin-right: 0px;
-}
-section.portfolio>nav{
-    display:inline-block;
-}
-section.portfolio ol{
-    display: inline-block;
-    vertical-align: top;
-    list-style: none;
-}
-section.portfolio>nav .bar{
-    height: 5px;
-    background-color: rgba(128, 128, 128, 0.192);
-    border-radius: 3px;
-    margin: 4px 0 28px 0;
-}
-section.portfolio>nav .bar .barInner{
-    height: 100%;
-    background-color: #E8676B;
-    transition: all 1s;
-}
-section.portfolio>nav .bar.state-1 .barInner{
-    width: 30px;
-    margin-left: 0;
-}
-section.portfolio>nav .bar.state-2 .barInner{
-    width: 50px;
-    margin-left: 75px;
-}
-section.portfolio>nav .bar.state-3 .barInner{
-    width: 95px;
-    margin-left: 165px;
-}
 section.portfolio .works{
     position: relative;
     box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
 }
-section.portfolio .works .big,
-section.portfolio .works .small{
-    position: absolute;
+section.portfolio .swiper-container {
+    width: 888px;
+    height: 666px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.514);
+}
+section.portfolio .swiper-button-prev{
+    left: -50px;
+    right: auto;
+    top: 60%;
+    
+}
+section.portfolio  .swiper-button-next{
+    right: -50px;
+    left: auto;
+    top: 60%;
 }

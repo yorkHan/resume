@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Resume</title>
-    <link rel="stylesheet" href="./CSS/main.css">
     <link rel="stylesheet" href="./CSS/loading.css">
+    <link rel="stylesheet" href="/node_modules/swiper/dist/css/swiper.min.css">
+    <link rel="stylesheet" href="./CSS/main.css">
     <script src="//at.alicdn.com/t/font_621912_9r2kl0u76xzb0529.js"></script>
+    <script src="/node_modules/swiper/dist/js/swiper.min.js"></script>
 </head>
 <body>
     <div id="siteWelcome" class="site-welcome active">
@@ -169,34 +171,27 @@
     </section>
     <section data-x id="works"  class="portfolio">
         <h2>作品集</h2>
-        <nav>
-            <ol class="clearfix">
-                <li id="portfolioAll">所有</li>
-                <li id="portfolioFramework">框架</li>
-                <li id="portfolioValina">原生JS&amp;CSS3</li>
-            </ol>
-            <div id="bar" class="bar state-1">
-                <div class="barInner"></div>
+        <div id="mySlides">
+            <div class="swiper-container">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <img src="/images/works/canvas.png" class="swiper-slide">
+                    <img src="/images/works/Nav.png" class="swiper-slide">
+                    <img src="/images/works/slides.png" class="swiper-slide">
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
             </div>
-        </nav>
-        <div class="works" style="height:597px;">
-            <div class="big" style="top:0;left:0;">
-                <img src="./images/big.jpg" alt="">
-            </div>
-            <div class='small' style="top:0;left:645px;">
-                <img src="./images/small1.jpg" alt="">
-            </div>
-            <div class="small" style="top:295px;left:645px;">
-                <img src="./images/small2.jpg" alt="">
-            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
         </div>
     </section>
-    <script src="scripts/Tween.js"></script>
-    <script src="scripts/script.js"></script>
-    <script>
-        setTimeout(function(){
-            siteWelcome.classList.remove('active')
-        },1000)
-    </script>
+    <script src="./scripts/slides_init.js"></script>
+    <script src="./scripts/Tween.js"></script>
+    <script src="./scripts/auto_slide_up.js"></script>
+    <script src="./scripts/loading.js"></script>
+    <script src="./scripts/smoothly_navigation.js"></script>
+    <script src="./scripts/topNavBar.js"></script>
 </body>
 </html>
